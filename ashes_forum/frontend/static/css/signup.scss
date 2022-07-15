@@ -1,0 +1,87 @@
+.embers1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  opacity: 0.1;
+  z-index: -1;
+  animation-name: embers;
+  animation-duration: 10s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+}
+
+.signup-container {
+  /*! This comment will be included even in compressed mode. */
+  background-size: cover;
+  margin: 0;
+  height: 100vh;
+  opacity: .95;
+}
+
+@keyframes embers {
+  0% { opacity: 0.0; width: 100vw; height: 100vh;  }
+  50% { opacity: 0.3; width: 102vw; height: 105vh; }
+  100% { opacity: 0.0; width: 100vw; height: 100vh; }
+}
+
+.landing-container, .signup-form {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  margin-top: 20vh;
+  margin-bottom: 10%;
+  @media screen and (max-width: 480px) {
+    margin-top: 30vh;
+    margin-bottom: 20%;
+  }
+}
+
+.logo-image {
+  width: 100%;
+}
+
+.cta-text {
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 24px;
+  line-height: 41px;
+  text-align: center;
+
+  @media screen and (max-width: 480px) {
+    font-size: 18px;
+  }
+}
+
+.signup-form input[type="email"] {
+  box-sizing: border-box;
+  padding-left: 12px;
+}
+
+.email-field {
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background: #CBA4A4;
+  mix-blend-mode: normal;
+  height: 56px;
+  min-width: 300px;
+  font-size: 18px;
+}
+
+.cta-btn {
+  background: #C93F4F;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.12), 0px 1px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  font-size: 24px;
+  color: #FFFFFF;
+  min-width: 300px;
+  padding: 12px 32px;
+  margin-top: 24px;
+}
+
