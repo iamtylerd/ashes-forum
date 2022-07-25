@@ -1,0 +1,2 @@
+release: python manage.py migrate
+web: gunicorn ashes_forum.wsgi --log-file -
